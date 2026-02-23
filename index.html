@@ -1,9 +1,183 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Index Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – Cache Notifier</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 24px;
+            color: #222;
+            line-height: 1.7;
+        }
+        h1 { color: #31A350; font-size: 28px; margin-bottom: 4px; }
+        h2 { color: #31A350; font-size: 18px; margin-top: 36px; }
+        .meta { color: #888; font-size: 14px; margin-bottom: 36px; }
+        a { color: #31A350; }
+        hr { border: none; border-top: 1px solid #eee; margin: 40px 0; }
+        .section { margin-bottom: 28px; }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Cache Notifier Privacy Page</h1>
-    <p>Current Date and Time (UTC): 2026-02-23 12:28:28</p>
+
+    <h1>Privacy Policy</h1>
+    <p class="meta">Cache Notifier &nbsp;·&nbsp; Last updated: February 23, 2026</p>
+
+    <div class="section">
+        <p>
+            Cache Notifier ("the App") is developed by Capslock AG ("we", "us", "our").
+            This Privacy Policy explains what data the App collects, how it is used, and
+            your rights regarding your data.
+        </p>
+    </div>
+
+    <h2>1. Data We Collect</h2>
+    <div class="section">
+        <p>The App collects the following data while it is active:</p>
+        <ul>
+            <li>
+                <strong>Precise GPS location</strong> – Your device's latitude, longitude,
+                and GPS accuracy. This data is collected continuously in the background
+                while the tracking service is running.
+            </li>
+            <li>
+                <strong>Project-GC credentials</strong> – Your Project-GC User ID and
+                Access Token, which you enter manually. These are stored locally on your
+                device in encrypted shared preferences and are never stored on our servers.
+            </li>
+            <li>
+                <strong>Notifier IDs</strong> – The Cache Notifier IDs you configure,
+                stored locally on your device.
+            </li>
+        </ul>
+        <p>We do <strong>not</strong> collect your name, email address, or any other
+        personal information beyond what is listed above.</p>
+    </div>
+
+    <h2>2. How We Use Your Data</h2>
+    <div class="section">
+        <p>Your GPS location is transmitted directly from your device to the
+        <strong>Project-GC API</strong> (project-gc.com) to update your position
+        in their system. This is the sole purpose of location collection and is the
+        core functionality of the App.</p>
+        <p>We transmit the following data to Project-GC with each location update:</p>
+        <ul>
+            <li>Latitude and longitude</li>
+            <li>GPS accuracy</li>
+            <li>Timestamp</li>
+            <li>Your Project-GC User ID and Access Token (for authentication)</li>
+            <li>Your Notifier ID(s)</li>
+        </ul>
+        <p>We do not store, log, or otherwise process your location data on our own servers.
+        All data goes directly from your device to Project-GC.</p>
+    </div>
+
+    <h2>3. Background Location Access</h2>
+    <div class="section">
+        <p>
+            Cache Notifier requires background location access because its core functionality
+            depends on continuously tracking your position while you are geocaching – even
+            when the app is not in the foreground. Without background location access,
+            the App cannot notify you about new caches near your current position.
+        </p>
+        <p>
+            A persistent foreground notification is displayed at all times while location
+            tracking is active, so you are always informed that the App is running.
+            You can stop tracking at any time by tapping "Stop Updates" in the App.
+        </p>
+    </div>
+
+    <h2>4. Third-Party Services</h2>
+    <div class="section">
+        <p>
+            The App communicates exclusively with the Project-GC API. Your use of
+            Project-GC's services is subject to their own Privacy Policy, which can
+            be found at:
+            <a href="https://project-gc.com/Home/Privacy" target="_blank">
+                https://project-gc.com/Home/Privacy
+            </a>
+        </p>
+        <p>We have no control over and assume no responsibility for Project-GC's
+        privacy practices.</p>
+    </div>
+
+    <h2>5. Data Retention</h2>
+    <div class="section">
+        <p>
+            All data stored by the App (credentials, notifier IDs, last known location)
+            is stored exclusively on your device. We do not retain any data on external
+            servers. Uninstalling the App removes all locally stored data.
+        </p>
+    </div>
+
+    <h2>6. Data Security</h2>
+    <div class="section">
+        <p>
+            Your Project-GC credentials are stored in Android's SharedPreferences on
+            your device. We recommend keeping your device secured with a PIN, password,
+            or biometric lock. All communication with the Project-GC API uses HTTPS.
+        </p>
+    </div>
+
+    <h2>7. Children's Privacy</h2>
+    <div class="section">
+        <p>
+            Cache Notifier is not directed at children under the age of 13. We do not
+            knowingly collect personal information from children. If you believe a child
+            has provided us with personal data, please contact us so we can take
+            appropriate action.
+        </p>
+    </div>
+
+    <h2>8. Your Rights</h2>
+    <div class="section">
+        <p>Since we do not store your personal data on our servers, there is no data
+        for us to provide, correct, or delete on our end. To remove your data from
+        Project-GC, please refer to their Privacy Policy and account settings.</p>
+        <p>To remove all locally stored App data, simply uninstall the App from
+        your device.</p>
+    </div>
+
+    <h2>9. Changes to This Policy</h2>
+    <div class="section">
+        <p>
+            We may update this Privacy Policy from time to time. Any changes will be
+            reflected by the "Last updated" date at the top of this page. We encourage
+            you to review this policy periodically.
+        </p>
+    </div>
+
+    <h2>10. Contact</h2>
+    <div class="section">
+        <p>
+            If you have any questions about this Privacy Policy, please contact us at:<br>
+            <a href="mailto:cachenotifier@capslock.ch">cachenotifier@capslock.ch</a>
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>Datenschutzerklärung (Deutsch)</h2>
+        <p>
+            Cache Notifier wird von Capslock AG entwickelt. Diese App sammelt ausschliesslich
+            GPS-Standortdaten und überträgt diese direkt an die Project-GC API, um deinen
+            Standort auf project-gc.com zu aktualisieren. Dies ist die einzige Funktion
+            der App, für die Standortdaten benötigt werden.
+        </p>
+        <p>
+            Deine Project-GC Zugangsdaten (Benutzer-ID und Zugriffstoken) werden ausschliesslich
+            lokal auf deinem Gerät gespeichert und nie an unsere Server übertragen.
+            Alle Standortdaten werden direkt von deinem Gerät an Project-GC gesendet –
+            wir speichern keine Standortdaten auf eigenen Servern.
+        </p>
+        <p>
+            Für Fragen: <a href="mailto:cachenotifier@capslock.ch">cachenotifier@capslock.ch</a>
+        </p>
+    </div>
+
 </body>
 </html>
